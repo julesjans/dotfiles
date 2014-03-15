@@ -2,7 +2,6 @@
 
 DOTFILES_ROOT="`pwd`"
 
-
 # Setting up the VIM Files
 
 ln -sf $DOTFILES_ROOT/vim/gvimrc $HOME/.gvimrc
@@ -18,8 +17,3 @@ then
   echo "Installing OSX Specific Configuration"
   source $DOTFILES_ROOT/osx/set-defaults.sh
 fi
-
-
-
-
-# TODO: Ruby stack install for UBUNTU 12.0.4 with passenger and Apache2
