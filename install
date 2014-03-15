@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+DOTFILES_ROOT="`pwd`"
+
+
+# Setting up the VIM Files
+
+ln -sf $DOTFILES_ROOT/vim/gvimrc $HOME/.gvimrc
+
+ln -sf $DOTFILES_ROOT/vim/vimrc $HOME/.vimrc
+
+ln -sf $DOTFILES_ROOT/vim $HOME/.vim
+
+
+# OSX Specific
+if [ "$(uname -s)" == "Darwin" ]
+then
+  echo "Installing OSX Specific Configuration"
+  source $DOTFILES_ROOT/osx/set-defaults.sh
+fi
+
+
+
+
+# TODO: Ruby stack install for UBUNTU 12.0.4 with passenger and Apache2
