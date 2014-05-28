@@ -10,6 +10,7 @@ ln -sf $DOTFILES_ROOT/vim/vimrc $HOME/.vimrc
 
 ln -sf $DOTFILES_ROOT/vim $HOME/.vim
 
+ln -sf $DOTFILES_ROOT/tmux/tmux.conf $HOME/.tmux.conf
 
 # OSX Specific
 if [ "$(uname -s)" == "Darwin" ]
