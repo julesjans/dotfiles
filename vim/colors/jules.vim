@@ -62,6 +62,11 @@ hi Search 				ctermfg = 238
 	
 hi link Special			Normal
 
+hi Number				ctermfg=229
+
+
+
+
 
 " RUBY
 hi link rubyBlockParameter			Normal
@@ -91,9 +96,7 @@ hi link javascript 					Normal
 hi htmlSpecialChar 					ctermfg=227
 
 " CSS
-
-
-
+hi StorageClass 					ctermfg=111
 
 
 
