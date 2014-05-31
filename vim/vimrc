@@ -51,6 +51,7 @@ set t_Co=256
 
 colorscheme jules
 
+let html_no_rendering=1
 
 
 

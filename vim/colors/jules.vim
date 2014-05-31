@@ -53,49 +53,47 @@ hi link Conditional		Keyword
 hi link Repeat			Keyword
 hi link Statement		Keyword
 
-hi link Identifier		Normal
+hi Identifier			ctermfg=254
 			
 hi link Error			Type
 hi link Exception		Type
 		
 hi Search 				ctermfg = 238
-			
+	
+hi link Special			Normal
 
 
+" RUBY
 hi link rubyBlockParameter			Normal
 hi link rubyStringDelimiter 		String
 hi link rubyInterpolationDelimiter 	String
 hi link rubyRegexpSpecial			String
 hi link rubyConstant				Constant
+hi link rubyIdentifier				Identifier
 hi rubySymbol 						ctermfg=229
 hi link rubyBoolean 				rubySymbol
 hi link rubyFloat 					rubySymbol
 hi link rubyInteger 				rubySymbol
 hi link rubyPseudoVariable 			rubySymbol
 
+" RAILS 
+hi link erubyDelimiter 				Normal
+
+" HTML
+hi htmlTag  						ctermfg=111
+hi link htmlArg  					htmlTag
+hi link htmlEndTag 					htmlTag
+hi link htmlTagName 				htmlTag
+hi link htmlString 					String
+hi link htmlComments 				Comments
+hi link htmlSpecialTagName 			Constant
+hi link javascript 					Normal
+hi htmlSpecialChar 					ctermfg=227
+
+" CSS
 
 
 
-
-
-
-
-
-"	RAILS COLORS
-"	hi link railsMethod Type
-
-
-
-
-
-""HTML COLORS
-"
-"" This should be blue....
-"hi link htmlTag Type
-"hi link htmlEndTag htmlTag
-"hi link htmlTagName htmlTag
-"
-"
 
 
 
