@@ -26,6 +26,13 @@ hi IncSearch    		ctermfg=226   ctermbg=236   guibg=#ffff00   guifg=#303030
 hi Pmenu 		    		ctermbg=237  	guifg=#3a3a3a
 hi PmenuSel     		ctermbg=236   ctermfg=254   guibg=#303030   guifg=#e4e4e4
 
+hi Directory        ctermfg=248   guifg=#a8a8a8 
+hi NERDTreeHelp     ctermfg=240   guifg=#585858
+hi NERDTreeUp       ctermfg=240   guifg=#585858
+hi NERDTreeCWD      ctermfg=254   guifg=#e4e4e4
+hi NERDTreeExecFile ctermfg=254   guifg=#e4e4e4
+hi NERDTreeLink     ctermfg=242   guifg=#6c6c6c
+hi NERDTreeRO       ctermfg=254   guifg=#e4e4e4
 
 hi Constant 			  ctermfg=172	  guifg=#d78700
 hi link Function		Constant
