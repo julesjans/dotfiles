@@ -81,6 +81,9 @@ nnoremap <silent> ]B :blast<CR>
 " HTML Tools
 map! html s#<\_.\{-1,}>##g<cr>
 
+" Ruby Tools
+" map <leader>r :!ruby %<cr>
+" map <leader>r :new <bar> !ruby % 
 
 " Automatic fold settings for specific files. Uncomment to use.
 " autocmd FileType ruby setlocal foldmethod=syntax
