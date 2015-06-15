@@ -45,6 +45,8 @@ hi Comment 				  ctermfg=240	  guifg=#585858
 hi String 				  ctermfg=120	  guifg=#87ff87
 hi Todo 				    ctermbg=238		ctermfg=160   guibg=#444444   guifg=#d70000
 
+hi Folded           ctermbg=254   ctermfg=236
+
 hi Keyword 				  ctermfg=227		guifg=#ffff5f
 hi link Conditional	Keyword
 hi link Repeat			Keyword
