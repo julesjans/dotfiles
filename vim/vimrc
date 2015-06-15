@@ -79,7 +79,7 @@ nnoremap <silent> ]B :blast<CR>
 
 
 " HTML Tools
-map! html s#<\_.\{-1,}>##g<cr>
+map notags :%s#<\_.\{-1,}>##g<cr>
 
 
 " Automatic fold settings for specific files. Uncomment to use.
