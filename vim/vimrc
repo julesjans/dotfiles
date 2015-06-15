@@ -86,8 +86,12 @@ map! html s#<\_.\{-1,}>##g<cr>
 " map <leader>r :new <bar> !ruby % 
 
 " Automatic fold settings for specific files. Uncomment to use.
-" autocmd FileType ruby setlocal foldmethod=syntax
-" autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
+autocmd FileType ruby setlocal foldmethod=syntax
+autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
+
+" Handling reformatting of XML:
+" http://ku1ik.com/2011/09/08/formatting-xml-in-vim-with-indent-command.s#<\_.\{-1,}>##g
+autocmd FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
 let NERDTreeShowHidden=1
 autocmd VimEnter * NERDTree
@@ -97,3 +101,6 @@ augroup ColorcolumnOnlyInInsertMode
   autocmd InsertEnter * setlocal colorcolumn=80
   autocmd InsertLeave * setlocal colorcolumn=0
 augroup END
+
+
+
