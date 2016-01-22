@@ -103,5 +103,6 @@ augroup ColorcolumnOnlyInInsertMode
   autocmd InsertLeave * setlocal colorcolumn=0
 augroup END
 
-
+" Hiding concealment (inverted commas in JSON)
+let g:vim_json_syntax_conceal = 0
 
