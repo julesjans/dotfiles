@@ -76,7 +76,8 @@ nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>   
 nnoremap <silent> ]B :blast<CR>    
 
-
+" Mapping for NERDTree
+map <F2> :NERDTreeToggle<CR>
 
 " HTML Tools
 map notags :%s#<\_.\{-1,}>##g<cr>
