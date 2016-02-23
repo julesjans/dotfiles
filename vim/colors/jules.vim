@@ -92,5 +92,6 @@ hi htmlSpecialChar 					          ctermfg=227   guifg=#ffff5f
 " CSS
 hi StorageClass 					            ctermfg=111   guifg=#87afff
 
-
-
+" Omnicompletion Window
+hi Pmenu      ctermbg=238 ctermfg=250
+hi PmenuSel   ctermbg=240 ctermfg=255
