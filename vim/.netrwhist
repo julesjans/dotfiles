@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/jules/Developer/voicecandy/voicecandy_rails'
-let g:netrw_dirhist_2='/Users/jules/Desktop/code_samples'
-let g:netrw_dirhist_3='/Users/jules/Desktop/VIM todo'
-let g:netrw_dirhist_4='/Users/jules/Developer/voicecandy/voicecandy_rails'
