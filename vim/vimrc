@@ -113,3 +113,8 @@ augroup END
 " Hiding concealment (inverted commas in JSON)
 let g:vim_json_syntax_conceal = 0
 
+" Resizing windows
+nmap <S-Left> :vertical res +5<CR>
+nmap <S-Right> :vertical res -5<CR>
+nmap <S-Up> :res +5<CR>
+nmap <S-Down> :res -5<CR>
