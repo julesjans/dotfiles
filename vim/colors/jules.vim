@@ -33,6 +33,8 @@ hi NERDTreeCWD          ctermfg=254
 hi NERDTreeExecFile     ctermfg=254   
 hi NERDTreeLink         ctermfg=242   
 hi NERDTreeRO           ctermfg=254   
+hi NERDTreeOpenable     ctermfg=242
+hi NERDTreeClosable     ctermfg=254
 
 hi Constant 	        ctermfg=173	 
 hi link Function        Constant
