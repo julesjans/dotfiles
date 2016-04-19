@@ -3,10 +3,10 @@
 set nocompatible                  " Must come first because it changes other options.
 
 execute pathogen#infect()
-call pathogen#helptags() 		  " generate helptags for everything in ‘runtimepath’
+call pathogen#helptags() 	  " generate helptags for everything in ‘runtimepath’
 
 syntax enable                     " Turn on syntax highlighting.
-syntax on						  " Turn on syntax highlighting.
+syntax on		    	  " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
 set omnifunc=syntaxcomplete#Complete
@@ -15,8 +15,8 @@ runtime macros/matchit.vim        " Load the matchit plugin.
 
 " INDENTATION
 set autoindent                    " set auto indent
-" set ts=4                          " set indent to 4 spaces
-" set tabstop=4                     " Global tab width.
+" set ts=4                        " set indent to 4 spaces
+" set tabstop=4                   " Global tab width.
 set softtabstop=4
 set shiftwidth=4
 set expandtab                     " Use spaces instead of tabs
@@ -46,11 +46,6 @@ set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
 set noswapfile                    " Don't make any swap files
 set laststatus=2                  " Show the status line all the time
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
-
-
-" Or use vividchalk
-" colorscheme blackboard
-
 set t_Co=256
 
 colorscheme jules
@@ -79,9 +74,6 @@ nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>   
 nnoremap <silent> ]B :blast<CR>    
 
-" Mapping for NERDTree
-map <F2> :NERDTreeToggle<CR>
-
 " HTML Tools
 map notags :%s#<\_.\{-1,}>##g<cr>
 
@@ -99,10 +91,11 @@ autocmd FileType eruby setlocal foldmethod=indent
 " http://ku1ik.com/2011/09/08/formatting-xml-in-vim-with-indent-command.s#<\_.\{-1,}>##g
 autocmd FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
-
+" Mapping for NERDTree
+map <F2> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.DS_Store$']
-autocmd VimEnter * NERDTree
+" autocmd VimEnter * NERDTree
 
 augroup ColorcolumnOnlyInInsertMode
   autocmd!
