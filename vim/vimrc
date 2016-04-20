@@ -92,7 +92,7 @@ autocmd FileType eruby setlocal foldmethod=indent
 autocmd FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
 " Mapping for NERDTree
-map <F2> :NERDTreeToggle<CR>
+map <leader>f :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.DS_Store$']
 " autocmd VimEnter * NERDTree
