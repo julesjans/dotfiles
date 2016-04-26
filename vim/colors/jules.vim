@@ -63,6 +63,10 @@ hi link Special	        Normal
 
 hi Number	        ctermfg=229
 
+" VIM DIFF
+hi DiffChange           term=bold   ctermfg=fg  ctermbg=4
+hi DiffAdd              term=bold   ctermfg=fg  ctermbg=2
+hi DiffDelete           term=bold   ctermfg=fg  ctermbg=9
 
 " RUBY
 hi link rubyBlockParameter	    Normal
@@ -95,5 +99,5 @@ hi htmlSpecialChar 		    ctermfg=228
 hi StorageClass 		    ctermfg=111
 
 " Omnicompletion Window
-hi Pmenu              ctermfg=250     ctermbg=238 
-hi PmenuSel           ctermfg=255     ctermbg=240 
+hi Pmenu              ctermfg=250   ctermbg=238 
+hi PmenuSel           ctermfg=255   ctermbg=240 
