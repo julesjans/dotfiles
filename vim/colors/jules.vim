@@ -101,3 +101,14 @@ hi StorageClass 		    ctermfg=111
 " Omnicompletion Window
 hi Pmenu              ctermfg=250   ctermbg=238 
 hi PmenuSel           ctermfg=255   ctermbg=240 
+
+
+hi StartifyBracket ctermfg=240
+hi StartifyFile    ctermfg=254
+hi StartifyFooter  ctermfg=240
+hi StartifyHeader  ctermfg=111
+hi StartifyNumber  ctermfg=254
+hi StartifyPath    ctermfg=245
+hi StartifySlash   ctermfg=240
+hi StartifySpecial ctermfg=240
+hi StartifySection ctermfg=111
