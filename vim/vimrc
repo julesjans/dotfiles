@@ -114,4 +114,11 @@ nmap <silent> <S-Down> :res -5<CR>
 
 " Startify
 let g:startify_list_order = [ ['Recents'], 'files', ['Current Dir'],'dir', ['Sessions'], 'sessions', ['Bookmarks'], 'bookmarks']
-let g:startify_custom_header = ['vim']
+let g:startify_custom_header = [
+\' ____ ____ ____ ',
+\'||v |||i |||m ||',
+\'||__|||__|||__||',
+\'|/__\|/__\|/__\|']
+                
+                
+                
