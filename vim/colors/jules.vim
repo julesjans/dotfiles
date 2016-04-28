@@ -104,11 +104,11 @@ hi PmenuSel           ctermfg=255   ctermbg=240
 
 
 hi StartifyBracket ctermfg=240
-hi StartifyFile    ctermfg=254
+hi StartifyFile    ctermfg=121
 hi StartifyFooter  ctermfg=240
-hi StartifyHeader  ctermfg=111
-hi StartifyNumber  ctermfg=254
+hi StartifyHeader  ctermfg=081
+hi StartifyNumber  ctermfg=081
 hi StartifyPath    ctermfg=245
-hi StartifySlash   ctermfg=240
+hi StartifySlash   ctermfg=254
 hi StartifySpecial ctermfg=240
-hi StartifySection ctermfg=111
+hi StartifySection ctermfg=254
