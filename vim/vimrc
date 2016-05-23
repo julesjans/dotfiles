@@ -106,6 +106,7 @@ augroup END
 
 " Hiding concealment (inverted commas in JSON)
 let g:vim_json_syntax_conceal = 0
+nmap =j :%!python -m json.tool<CR>
 
 " Resizing windows
 nmap <silent> <S-Left> :vertical res -5<CR>
