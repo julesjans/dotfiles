@@ -48,6 +48,7 @@ hi String 	        ctermfg=049
 hi Todo 		ctermfg=160     ctermbg=238
 
 hi Folded               ctermfg=240     ctermbg=234   
+hi FoldColumn           ctermfg=235
 
 hi Keyword 		ctermfg=228
 hi link Conditional     Keyword
