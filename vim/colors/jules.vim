@@ -96,6 +96,11 @@ hi link htmlSpecialTagName 	    Constant
 hi link javascript 		    Normal
 hi htmlSpecialChar 		    ctermfg=228
 
+" XML
+hi link xmlTag                      htmlTag 
+hi link xmlTagName                  xmlTag 
+hi link xmlEndtag                   xmlTag 
+
 " CSS
 hi StorageClass 		    ctermfg=111
 
