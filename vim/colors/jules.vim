@@ -14,9 +14,8 @@ hi Normal 	        ctermfg=254     ctermbg=236
 hi StatusLine   	ctermfg=242	ctermbg=235		 
 hi StatusLineNC		ctermfg=237     ctermbg=235		
 hi CursorLine                           ctermbg=235    term=bold   cterm=bold   
-"hi CursorLineNr          
 hi Visual       		        ctermbg=239   
-hi LineNr 		ctermfg=236	ctermbg=235  
+hi LineNr 		ctermfg=239	ctermbg=235  
 hi NonText		ctermfg=240   
 hi VertSplit    	ctermfg=235	ctermbg=236    
 hi ColorColumn  		        ctermbg=237   
@@ -48,7 +47,7 @@ hi String 	        ctermfg=049
 hi Todo 		ctermfg=160     ctermbg=238
 
 hi Folded               ctermfg=240     ctermbg=234   
-hi FoldColumn           ctermfg=235
+hi FoldColumn           ctermfg=236     ctermbg=238
 
 hi Keyword 		ctermfg=228
 hi link Conditional     Keyword
@@ -65,61 +64,60 @@ hi link Special	        Normal
 hi Number	        ctermfg=229
 
 " VIM DIFF
-hi DiffChange           term=bold   ctermfg=fg  ctermbg=4
-hi DiffAdd              term=bold   ctermfg=fg  ctermbg=2
-hi DiffDelete           term=bold   ctermfg=fg  ctermbg=9
+hi DiffChange           term=bold       ctermfg=fg      ctermbg=004
+hi DiffAdd              term=bold       ctermfg=fg      ctermbg=002
+hi DiffDelete           term=bold       ctermfg=fg      ctermbg=009
 
 " Tab Bar
-hi TabLineFill          ctermfg=235 ctermbg=242 cterm=none
-hi TablineSel           ctermfg=246 ctermbg=235 cterm=none
-hi Tabline              ctermfg=235 ctermbg=242 cterm=none
+hi TabLineFill          ctermfg=235     ctermbg=242     cterm=none
+hi TablineSel           ctermfg=246     ctermbg=235     cterm=none
+hi Tabline              ctermfg=235     ctermbg=242     cterm=none
 
 " RUBY
-hi link rubyBlockParameter	    Normal
-hi link rubyStringDelimiter 	    String
-hi link rubyInterpolationDelimiter  String
-hi link rubyRegexpSpecial	    String
-hi link rubyConstant		    Constant
-hi link rubyIdentifier		    Identifier
-hi rubySymbol 			    ctermfg=229
-hi link rubyBoolean 	    	    rubySymbol
-hi link rubyFloat 		    rubySymbol
-hi link rubyInteger 		    rubySymbol
-hi link rubyPseudoVariable 	    rubySymbol
+hi link rubyBlockParameter              Normal
+hi link rubyStringDelimiter             String
+hi link rubyInterpolationDelimiter      String
+hi link rubyRegexpSpecial               String
+hi link rubyConstant                    Constant
+hi link rubyIdentifier                  Identifier
+hi rubySymbol                           ctermfg=229
+hi link rubyBoolean                     rubySymbol
+hi link rubyFloat                       rubySymbol
+hi link rubyInteger                     rubySymbol
+hi link rubyPseudoVariable              rubySymbol
 
 " RAILS 
-hi link erubyDelimiter 		    Normal
+hi link erubyDelimiter                  Normal
 
 " HTML
-hi htmlTag  		            ctermfg=111
-hi link htmlArg  		    htmlTag
-hi link htmlEndTag 	            htmlTag
-hi link htmlTagName 	            htmlTag
-hi link htmlString 		    String
-hi link htmlComments 		    Comments
-hi link htmlSpecialTagName 	    Constant
-hi link javascript 		    Normal
-hi htmlSpecialChar 		    ctermfg=228
+hi htmlTag                              ctermfg=111
+hi link htmlArg                         htmlTag
+hi link htmlEndTag                      htmlTag
+hi link htmlTagName                     htmlTag
+hi link htmlString                      String
+hi link htmlComments                    Comments
+hi link htmlSpecialTagName              Constant
+hi link javascript                      Normal
+hi htmlSpecialChar                      ctermfg=228
 
 " XML
-hi link xmlTag                      htmlTag 
-hi link xmlTagName                  xmlTag 
-hi link xmlEndtag                   xmlTag 
+hi link xmlTag                          htmlTag 
+hi link xmlTagName                      xmlTag 
+hi link xmlEndtag                       xmlTag 
 
 " CSS
-hi StorageClass 		    ctermfg=111
+hi StorageClass                         ctermfg=111
 
 " Omnicompletion Window
-hi Pmenu              ctermfg=250   ctermbg=238 
-hi PmenuSel           ctermfg=255   ctermbg=240 
+hi Pmenu               ctermfg=250      ctermbg=238 
+hi PmenuSel            ctermfg=255      ctermbg=240 
 
-
-hi StartifyBracket ctermfg=240
-hi StartifyFile    ctermfg=121
-hi StartifyFooter  ctermfg=240
-hi StartifyHeader  ctermfg=081
-hi StartifyNumber  ctermfg=081
-hi StartifyPath    ctermfg=245
-hi StartifySlash   ctermfg=254
-hi StartifySpecial ctermfg=240
-hi StartifySection ctermfg=254
+hi StartifyBracket     ctermfg=240
+hi StartifyFile        ctermfg=121
+hi StartifyFooter      ctermfg=240
+hi StartifyHeader      ctermfg=081
+hi StartifyNumber      ctermfg=081
+hi StartifyPath        ctermfg=245
+hi StartifySlash       ctermfg=254
+hi StartifySpecial     ctermfg=240
+hi StartifySection     ctermfg=254
