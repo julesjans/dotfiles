@@ -46,6 +46,8 @@ set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
 set noswapfile                    " Don't make any swap files
 set laststatus=2                  " Show the status line all the time
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
+set showtabline=1  " 1 to show tabline only when more than one tab is present
+set tabline=%!MyTabLine()  " custom tab pages line
 set t_Co=256
 
 colorscheme jules
@@ -99,9 +101,9 @@ let NERDTreeIgnore = ['\.DS_Store$']
 " autocmd VimEnter * NERDTree
 
 augroup ColorcolumnOnlyInInsertMode
-  autocmd!
-  autocmd InsertEnter * setlocal colorcolumn=80
-  autocmd InsertLeave * setlocal colorcolumn=0
+    autocmd!
+    autocmd InsertEnter * setlocal colorcolumn=80
+    autocmd InsertLeave * setlocal colorcolumn=0
 augroup END
 
 " Hiding concealment (inverted commas in JSON)
@@ -118,7 +120,9 @@ nmap <silent> <S-Down> :res -5<CR>
 let g:startify_session_dir = '~/.vimsessions'
 let g:startify_list_order = [ ['Recents'], 'files', ['Current Dir'],'dir', ['Sessions'], 'sessions', ['Bookmarks'], 'bookmarks']
 let g:startify_custom_header = [
-\' ____ ____ ____ ',
-\'||v |||i |||m ||',
-\'||__|||__|||__||',
-\'|/__\|/__\|/__\|']
+            \' ____ ____ ____ ',
+            \'||v |||i |||m ||',
+            \'||__|||__|||__||',
+            \'|/__\|/__\|/__\|']
+
+
