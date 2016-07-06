@@ -69,9 +69,9 @@ hi DiffAdd              term=bold       ctermfg=fg      ctermbg=002
 hi DiffDelete           term=bold       ctermfg=fg      ctermbg=009
 
 " Tab Bar
-hi TabLineFill          ctermfg=235     ctermbg=242     cterm=none
-hi TablineSel           ctermfg=246     ctermbg=235     cterm=none
-hi Tabline              ctermfg=235     ctermbg=242     cterm=none
+hi TabLineFill          ctermfg=235     ctermbg=242     cterm=bold
+hi TablineSel           ctermfg=246     ctermbg=235     cterm=bold
+hi Tabline              ctermfg=235     ctermbg=242     cterm=bold
 
 " RUBY
 hi link rubyBlockParameter              Normal
