@@ -1,4 +1,3 @@
-" Copy or symlink to ~/.vimrc or ~/_vimrc.
 
 set nocompatible                  " Must come first because it changes other options.
 
@@ -15,14 +14,10 @@ runtime macros/matchit.vim        " Load the matchit plugin.
 
 " INDENTATION
 set autoindent                    " set auto indent
-" set ts=4                        " set indent to 4 spaces
-" set tabstop=4                   " Global tab width.
 set softtabstop=4
 set shiftwidth=4
 set expandtab                     " Use spaces instead of tabs
-
 set nowrap
-
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
 set showmatch                     " show bracket matches
@@ -52,15 +47,13 @@ set t_Co=256
 
 colorscheme jules
 
-let html_no_rendering=1
-
 " highlight the status bar when in insert mode
 "if version >= 700
 "  au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
 "  au InsertLeave * hi StatusLine ctermbg=240 ctermfg=12
 "endif
 
-" Tab mappings.
+" Tab mappings
 map <leader>tt :tabnew<cr>
 map <leader>te :tabedit
 map <leader>tc :tabclose<cr>
@@ -71,10 +64,23 @@ map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
 
+" Buffer mappings
 nnoremap <silent> [b :bprevious<CR>	
 nnoremap <silent> ]b :bnext<CR>    
 nnoremap <silent> [B :bfirst<CR>   
 nnoremap <silent> ]B :blast<CR>    
+
+" FileType Settings
+let html_no_rendering=1
+let g:xml_syntax_folding=1
+let g:vim_json_syntax_conceal = 0 " Hiding concealment (inverted commas in JSON)
+
+autocmd FileType xml    setlocal foldmethod=syntax equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
+autocmd FileType json   setlocal foldmethod=syntax equalprg=python\ -m\ json.tool
+autocmd FileType ruby   setlocal foldmethod=syntax softtabstop=2 shiftwidth=2
+autocmd FileType eruby  setlocal foldmethod=indent 
+autocmd FileType css    setlocal foldmethod=indent 
+autocmd FileType html   setlocal foldmethod=indent 
 
 " HTML Tools
 map notags :%s#<\_.\{-1,}>##g<cr>
@@ -82,17 +88,6 @@ map notags :%s#<\_.\{-1,}>##g<cr>
 " Ruby Tools
 " map <leader>r :!ruby %<cr>
 " map <leader>r :new <bar> !ruby % 
-
-" Automatic fold settings for specific files. Uncomment to use.
-autocmd FileType ruby   setlocal foldmethod=syntax softtabstop=2 shiftwidth=2
-autocmd FileType eruby  setlocal foldmethod=indent 
-autocmd FileType css    setlocal foldmethod=indent 
-autocmd FileType html   setlocal foldmethod=indent 
-autocmd FileType json   setlocal foldmethod=syntax 
-
-" Handling reformatting of XML:
-" http://ku1ik.com/2011/09/08/formatting-xml-in-vim-with-indent-command.s#<\_.\{-1,}>##g
-autocmd FileType xml    setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
 " Mapping for NERDTree
 map <leader>f :NERDTreeToggle<CR>
@@ -105,10 +100,6 @@ augroup ColorcolumnOnlyInInsertMode
     autocmd InsertEnter * setlocal colorcolumn=80
     autocmd InsertLeave * setlocal colorcolumn=0
 augroup END
-
-" Hiding concealment (inverted commas in JSON)
-let g:vim_json_syntax_conceal = 0
-nmap =j :%!python -m json.tool<CR>
 
 " Resizing windows
 nmap <silent> <S-Left> :vertical res -5<CR>
@@ -124,5 +115,3 @@ let g:startify_custom_header = [
             \'||v |||i |||m ||',
             \'||__|||__|||__||',
             \'|/__\|/__\|/__\|']
-
-
