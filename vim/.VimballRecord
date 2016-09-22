@@ -1,0 +1,1 @@
+hilinks.vba: call delete('/Users/jules/.vim/plugin/hilinks.vim')|call delete('/Users/jules/.vim/doc/hilinks.txt')
