@@ -115,3 +115,15 @@ let g:startify_custom_header = [
             \'||v |||i |||m ||',
             \'||__|||__|||__||',
             \'|/__\|/__\|/__\|']
+
+" vim -b : edit binary using xxd-format!
+" augroup Binary
+"     au!
+"     au BufReadPre  *.bin,*.jpg let &bin=1
+"     au BufReadPost *.bin,*.jpg if &bin | %!xxd
+"     au BufReadPost *.bin,*.jpg set ft=xxd | endif
+"     au BufWritePre *.bin,*.jpg if &bin | %!xxd -r
+"     au BufWritePre *.bin,*.jpg endif
+"     au BufWritePost *.bin,*.jpg if &bin | %!xxd
+"     au BufWritePost *.bin,*.jpg set nomod | endif
+" augroup END
