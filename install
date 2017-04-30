@@ -21,6 +21,13 @@ ln -sf $DOTFILES_ROOT/oh-my-zsh/ $HOME/.oh-my-zsh
 #  source $DOTFILES_ROOT/osx/set-defaults.sh
 #fi
 
+if [ "$(uname -s)" == "Linux" ]
+then
+    echo "Installing Linux Specific Configuration"
+    echo "alias pbcopy=\"xclip -selection clipboard\"" >> ~/.bash_profile
+    echo "alias pbpaste=\"xclip -selection clipboard -o\"" >> ~/.bash_profile
+fi
+
 # Set vim as the global git diff tool
 if git --version > /dev/null 2>&1; then
     git config --global diff.tool vimdiff
