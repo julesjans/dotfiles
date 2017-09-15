@@ -14,6 +14,9 @@ ln -sf $DOTFILES_ROOT/tmux/tmux.conf $HOME/.tmux.conf
 
 ln -sf $DOTFILES_ROOT/oh-my-zsh/ $HOME/.oh-my-zsh
 
+mkdir -p ~/.config/htop/ && ln -sf $DOTFILES_ROOT/htop/htopc/ $HOME/.config/htop/htopc
+
+
 # OSX Specific
 #if [ "$(uname -s)" == "Darwin" ]
 #then
