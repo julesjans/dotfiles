@@ -1,20 +1,16 @@
 #!/usr/bin/env bash
 
-DOTFILES_ROOT="`pwd`"
+ln -sf $HOME/.dotfiles/vim/gvimrc $HOME/.gvimrc
 
-# Setting up the VIM Files
+ln -sf $HOME/.dotfiles/vim/vimrc $HOME/.vimrc
 
-ln -sf $DOTFILES_ROOT/vim/gvimrc $HOME/.gvimrc
+ln -sf $HOME/.dotfiles/vim/ $HOME/.vim
 
-ln -sf $DOTFILES_ROOT/vim/vimrc $HOME/.vimrc
+ln -sf $HOME/.dotfiles/tmux/tmux.conf $HOME/.tmux.conf
 
-ln -sf $DOTFILES_ROOT/vim $HOME/.vim
+ln -sf $HOME/.dotfiles/oh-my-zsh/ $HOME/.oh-my-zsh
 
-ln -sf $DOTFILES_ROOT/tmux/tmux.conf $HOME/.tmux.conf
-
-ln -sf $DOTFILES_ROOT/oh-my-zsh/ $HOME/.oh-my-zsh
-
-mkdir -p ~/.config/htop/ && ln -sf $DOTFILES_ROOT/htop/htopc/ $HOME/.config/htop/htopc
+mkdir -p ~/.config/htop/ && ln -sf $HOME/.dotfiles/htop/htopc/ $HOME/.config/htop/htopc
 
 
 # OSX Specific
