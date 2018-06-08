@@ -14,6 +14,7 @@ runtime macros/matchit.vim        " Load the matchit plugin.
 
 " INDENTATION
 set autoindent                    " set auto indent
+set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab                     " Use spaces instead of tabs
@@ -79,8 +80,9 @@ autocmd FileType xml    setlocal foldmethod=syntax equalprg=xmllint\ --format\ -
 autocmd FileType json   setlocal foldmethod=syntax equalprg=python\ -m\ json.tool
 autocmd FileType ruby   setlocal foldmethod=syntax softtabstop=2 shiftwidth=2
 autocmd FileType eruby  setlocal foldmethod=indent 
+autocmd FileType html   setlocal foldmethod=indent tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType css    setlocal foldmethod=indent 
-autocmd FileType html   setlocal foldmethod=indent 
+autocmd FileType py     setlocal foldmethod=indent tabstop=4 softtabstop=4 shiftwidth=4
 
 " HTML Tools
 map notags :%s#<\_.\{-1,}>##g<cr>
