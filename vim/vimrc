@@ -90,6 +90,9 @@ map notags :%s#<\_.\{-1,}>##g<cr>
 " Ruby Tools
 " map <leader>r :!ruby %<cr>
 " map <leader>r :new <bar> !ruby % 
+ 
+" Python Tools
+command Py execute "w ! python"
 
 " Mapping for NERDTree
 map <leader>f :NERDTreeToggle<CR>
