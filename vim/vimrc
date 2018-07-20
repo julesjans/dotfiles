@@ -92,7 +92,7 @@ map notags :%s#<\_.\{-1,}>##g<cr>
 " map <leader>r :new <bar> !ruby % 
  
 " Python Tools
-command Py execute "w ! python"
+command Py execute "w ! python3"
 
 " Mapping for NERDTree
 map <leader>f :NERDTreeToggle<CR>
