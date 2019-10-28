@@ -52,3 +52,6 @@
 [submodule "vim/bundle/vim-javascript"]
 	path = vim/bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript
+[submodule "vim/bundle/kotlin-vim"]
+	path = vim/bundle/kotlin-vim
+	url = https://github.com/udalov/kotlin-vim
