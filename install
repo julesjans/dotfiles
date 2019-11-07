@@ -1,18 +1,20 @@
 #!/usr/bin/env bash
 
-ln -sf $HOME/.dotfiles/vim/gvimrc $HOME/.gvimrc
+ln -sfn $HOME/.dotfiles/vim/gvimrc $HOME/.gvimrc
 
-ln -sf $HOME/.dotfiles/vim/vimrc $HOME/.vimrc
+ln -sfn $HOME/.dotfiles/vim/vimrc $HOME/.vimrc
 
-ln -sf $HOME/.dotfiles/vim/ $HOME/.vim
+ln -sfn $HOME/.dotfiles/vim/ $HOME/.vim
 
-mkdir -p ~/.config && ln -sf $HOME/.dotfiles/nvim/ $HOME/.config/nvim
+mkdir -p ~/.config && ln -sfn $HOME/.dotfiles/nvim/ $HOME/.config/nvim
 
-ln -sf $HOME/.dotfiles/tmux/tmux.conf $HOME/.tmux.conf
+ln -sfn $HOME/.dotfiles/tmux/tmux.conf $HOME/.tmux.conf
 
-ln -sf $HOME/.dotfiles/oh-my-zsh/ $HOME/.oh-my-zsh
+ln -sfn $HOME/.dotfiles/oh-my-zsh/ $HOME/.oh-my-zsh
 
-mkdir -p ~/.config/htop/ && ln -sf $HOME/.dotfiles/htop/htopc/ $HOME/.config/htop/htopc
+mkdir -p ~/.config/htop/ && ln -sfn $HOME/.dotfiles/htop/htopc/ $HOME/.config/htop/htopc
+
+git config --global include.path ~/.dotfiles/gitconfig
 
 
 # OSX Specific
@@ -27,10 +29,4 @@ then
     echo "Installing Linux Specific Configuration"
     echo "alias pbcopy=\"xclip -selection clipboard\"" >> ~/.bash_profile
     echo "alias pbpaste=\"xclip -selection clipboard -o\"" >> ~/.bash_profile
-fi
-
-# Set vim as the global git diff tool
-if git --version > /dev/null 2>&1; then
-    git config --global diff.tool vimdiff
-    git config --global merge.tool vimdiff
 fi
