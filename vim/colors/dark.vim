@@ -5,7 +5,7 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let g:colors_name = "jules"
+let g:colors_name = "light"
 
 hi clear SignColumn
 "
@@ -79,15 +79,17 @@ hi Tabline              ctermfg=235     ctermbg=242     cterm=bold
 
 " RUBY
 hi link rubyBlockParameter              Normal
+hi link rubyClassBlock                  Normal
+hi link rubyMacro                       Normal
 hi link rubyStringDelimiter             String
 hi link rubyInterpolationDelimiter      String
 hi link rubyRegexpSpecial               String
 hi link rubyConstant                    Constant
 hi link rubyIdentifier                  Identifier
-hi rubySymbol                           ctermfg=229
 hi link rubyBoolean                     rubySymbol
 hi link rubyFloat                       rubySymbol
 hi link rubyInteger                     rubySymbol
+hi rubySymbol                           ctermfg=229
 
 " RAILS
 hi link erubyDelimiter                  Normal
@@ -126,8 +128,11 @@ hi StartifySlash       ctermfg=254
 hi StartifySpecial     ctermfg=240
 hi StartifySection     ctermfg=254
 
+" Vim 
+hi vimOption           ctermfg=081
+
 " Colour names from: https://jonasjacek.github.io/colors/
-"green                = 002
+"green                = 002 
 "navy                 = 004
 "red                  = 009
 "medium_spring_green  = 049

@@ -47,7 +47,16 @@ set tabline=%!MyTabLine()           " custom tab pages line
 set t_Co=256
 set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
 
-colorscheme jules
+colorscheme dark
+
+" Show syntax highlighting groups for word under cursor nmap <leader>z :call <SID>SynStack()<CR>
+nmap <leader>z :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
 
 " Tab mappings
 map <leader>tt :tabnew<cr>
