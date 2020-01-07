@@ -20,7 +20,7 @@ hi StatusLineNC         ctermfg=255     ctermbg=246
 hi Visual               ctermbg=225
 hi LineNr               ctermfg=231     ctermbg=255
 hi CursorLineNr         ctermfg=000     ctermbg=255
-hi CursorLine           ctermbg=255     term=bold   cterm=bold
+hi CursorLine           ctermbg=255     cterm=bold
 hi NonText              ctermfg=240
 hi VertSplit            ctermfg=235     ctermbg=236
 hi ColorColumn          ctermbg=237
@@ -69,9 +69,9 @@ hi link Special         Normal
 hi Number               ctermfg=020
 
 " VIM DIFF
-hi DiffChange           term=bold       ctermfg=fg      ctermbg=004
-hi DiffAdd              term=bold       ctermfg=fg      ctermbg=002
-hi DiffDelete           term=bold       ctermfg=fg      ctermbg=009
+hi DiffChange           ctermfg=fg      ctermbg=004
+hi DiffAdd              ctermfg=fg      ctermbg=002
+hi DiffDelete           ctermfg=fg      ctermbg=009
 
 " Tab Bar
 hi TabLineFill          ctermfg=235     ctermbg=242     cterm=bold
