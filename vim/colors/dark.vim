@@ -17,7 +17,8 @@ set cursorline
 hi Normal               ctermfg=254     ctermbg=236
 hi StatusLine           ctermfg=242     ctermbg=235
 hi StatusLineNC         ctermfg=237     ctermbg=235
-hi CursorLine           ctermbg=235     term=bold   cterm=bold
+hi CursorLine           ctermbg=235     cterm=bold
+hi CursorLineNr         ctermfg=226     ctermbg=235   cterm=bold
 hi Visual               ctermbg=239
 hi LineNr               ctermfg=239     ctermbg=235
 hi NonText              ctermfg=240
@@ -68,9 +69,9 @@ hi link Special         Normal
 hi Number               ctermfg=229
 
 " VIM DIFF
-hi DiffChange           term=bold       ctermfg=fg      ctermbg=004
-hi DiffAdd              term=bold       ctermfg=fg      ctermbg=002
-hi DiffDelete           term=bold       ctermfg=fg      ctermbg=009
+hi DiffChange           ctermfg=fg      ctermbg=004     cterm=bold
+hi DiffAdd              ctermfg=fg      ctermbg=002     cterm=bold
+hi DiffDelete           ctermfg=fg      ctermbg=009     cterm=bold
 
 " Tab Bar
 hi TabLineFill          ctermfg=235     ctermbg=242     cterm=bold
