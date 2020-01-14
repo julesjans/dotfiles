@@ -6,22 +6,22 @@
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim/bundle/base16-vim"]
 	path = vim/bundle/base16-vim
 	url = https://github.com/chriskempson/base16-vim.git
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "vim/bundle/vim-rails"]
 	path = vim/bundle/vim-rails
-	url = git://github.com/tpope/vim-rails.git
+	url = https://github.com/tpope/vim-rails.git
 [submodule "vim/bundle/vim-bundler"]
 	path = vim/bundle/vim-bundler
-	url = git://github.com/tpope/vim-bundler.git
+	url = https://github.com/tpope/vim-bundler.git
 [submodule "vim/bundle/vim-commentary"]
 	path = vim/bundle/vim-commentary
-	url = git://github.com/tpope/vim-commentary.git
+	url = https://github.com/tpope/vim-commentary.git
 [submodule "vim/bundle/html5.vim"]
 	path = vim/bundle/html5.vim
 	url = https://github.com/othree/html5.vim.git
@@ -45,7 +45,7 @@
 	url = https://github.com/mhinz/vim-startify.git
 [submodule "vim/bundle/vim-speeddating"]
 	path = vim/bundle/vim-speeddating
-	url = git://github.com/tpope/vim-speeddating.git
+	url = https://github.com/tpope/vim-speeddating.git
 [submodule "vim/bundle/vim-coffee-script"]
 	path = vim/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
