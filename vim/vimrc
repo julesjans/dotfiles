@@ -114,7 +114,12 @@ augroup END
 " https://github.com/junegunn/fzf.vim#global-options
 if executable('fzf')
 
-    set rtp+=/usr/local/opt/fzf
+    " Configure the path for FZF binaries
+    if has('macunix')
+        set rtp+=/usr/local/opt/fzf
+    else
+        set rtp+=~/.fzf
+    endif
 
     noremap <c-p> :Files<cr>
 
