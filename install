@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+ln -sfn $HOME/.dotfiles/.bash_profile $HOME/.bash_profile
+
 ln -sfn $HOME/.dotfiles/vim/gvimrc $HOME/.gvimrc
 
 ln -sfn $HOME/.dotfiles/vim/vimrc $HOME/.vimrc
@@ -15,18 +17,3 @@ ln -sfn $HOME/.dotfiles/oh-my-zsh/ $HOME/.oh-my-zsh
 mkdir -p ~/.config/htop/ && ln -sfn $HOME/.dotfiles/htop/htopc/ $HOME/.config/htop/htopc
 
 git config --global include.path ~/.dotfiles/gitconfig
-
-
-# OSX Specific
-#if [ "$(uname -s)" == "Darwin" ]
-#then
-#  echo "Installing OSX Specific Configuration"
-#  source $DOTFILES_ROOT/osx/set-defaults.sh
-#fi
-
-if [ "$(uname -s)" == "Linux" ]
-then
-    echo "Installing Linux Specific Configuration"
-    echo "alias pbcopy=\"xclip -selection clipboard\"" >> ~/.bash_profile
-    echo "alias pbpaste=\"xclip -selection clipboard -o\"" >> ~/.bash_profile
-fi
