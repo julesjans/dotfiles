@@ -2,6 +2,12 @@
 
 ln -sfn $HOME/.dotfiles/.bash_profile $HOME/.bash_profile
 
+ln -sfn $HOME/.dotfiles/.bash_logout $HOME/.bash_logout
+
+ln -sfn $HOME/.dotfiles/.bash_aliases $HOME/.bash_aliases
+
+ln -sfn $HOME/.dotfiles/.bash_functions $HOME/.bash_functions
+
 ln -sfn $HOME/.dotfiles/vim/gvimrc $HOME/.gvimrc
 
 ln -sfn $HOME/.dotfiles/vim/vimrc $HOME/.vimrc
