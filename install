@@ -20,6 +20,6 @@ ln -sfn $HOME/.dotfiles/tmux/tmux.conf $HOME/.tmux.conf
 
 ln -sfn $HOME/.dotfiles/oh-my-zsh/ $HOME/.oh-my-zsh
 
-mkdir -p ~/.config/htop/ && ln -sfn $HOME/.dotfiles/htop/htopc/ $HOME/.config/htop/htopc
+mkdir -p ~/.config && ln -sfn $HOME/.dotfiles/htop/ $HOME/.config/htop
 
 git config --global include.path ~/.dotfiles/gitconfig
