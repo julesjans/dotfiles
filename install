@@ -18,6 +18,8 @@ mkdir -p ~/.config && ln -sfn $HOME/.dotfiles/nvim/ $HOME/.config/nvim
 
 ln -sfn $HOME/.dotfiles/tmux/tmux.conf $HOME/.tmux.conf
 
+ln -sfn $HOME/.dotfiles/mysql/my.cnf $HOME/.my.cnf
+
 ln -sfn $HOME/.dotfiles/oh-my-zsh/ $HOME/.oh-my-zsh
 
 mkdir -p ~/.config && ln -sfn $HOME/.dotfiles/htop/ $HOME/.config/htop
