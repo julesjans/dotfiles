@@ -1,1 +1,2 @@
 hilinks.vba: call delete('/Users/jules/.vim/plugin/hilinks.vim')|call delete('/Users/jules/.vim/doc/hilinks.txt')
+visincr.vba: call delete('/home/ubuntu/.vim/plugin/visincrPlugin.vim')|call delete('/home/ubuntu/.vim/autoload/visincr.vim')|call delete('/home/ubuntu/.vim/doc/visincr.txt')
