@@ -16,3 +16,10 @@ sample_text () {
     # Limit the lines of text if a number has been set
     if ! [[ -z "$LIMIT" ]] ; then echo "$OUTPUT" | head "-n $LIMIT"; else echo "$OUTPUT"; fi
 }
+
+# Shortcut to optimise video file for the web
+web_video () {
+
+    ffmpeg -i "$1" -vcodec libx264 -crf 20 "$1.mp4"
+
+}
