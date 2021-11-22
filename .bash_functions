@@ -23,3 +23,13 @@ web_video () {
     ffmpeg -i "$1" -vcodec libx264 -crf 20 "$1.mp4"
 
 }
+
+# Simple web reponse check
+site_check () {
+    echo "Checking $1: $(curl -sIL "$1" | grep -e "HTTP" | tail -n 1)"
+}
+
+# Simple site speed/redirection check
+site_speed() {
+    for x in `seq 6`; do curl -LIk -w "HTTPCode=%{http_code} TotalTime=%{time_total} (%{num_redirects} redirect(s)) %{url_effective}\n" $1 -so /dev/null; done
+}
