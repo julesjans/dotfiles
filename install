@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
-if [ -z "$CODESPACES" ];
+if $CODESPACES;
 then
-  DOTFILES_DIR=/workspaces/.codespaces/.persistedshare/dotfiles/
+  DOTFILES_DIR=/workspaces/.codespaces/.persistedshare/dotfiles
+  cd $DOTFILES_DIR && git submodule init && git submodule update
 else
-  DOTFILES_DIR=$HOME/.dotfiles/
+  DOTFILES_DIR=$HOME/.dotfiles
 fi
 
 ln -sfn $DOTFILES_DIR/.bash_profile $HOME/.bash_profile
@@ -23,7 +24,3 @@ ln -sfn $DOTFILES_DIR/htop/ $HOME/.config/htop
 ln -sfn $DOTFILES_DIR/.gitconfig/ $HOME/.gitconfig
 
 git config --global include.path $HOME/.gitconfig
-
-if [ -z "$CODESPACES" ]; then
-  cd $DOTFILES_DIR && git submodule init && git submodule update
-fi
