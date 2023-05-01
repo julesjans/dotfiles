@@ -5,10 +5,10 @@ if [ -f ~/.bashrc ]; then . ~/.bashrc; fi
 export PATH="/usr/local/sbin:$PATH"
 
 # Source bash aliases
-source $HOME/.dotfiles/.bash_aliases
+source $HOME/.bash_aliases
 
 # Source bash functions
-source $HOME/.dotfiles/.bash_functions
+source $HOME/.bash_functions
 
 # Start SSH Agent
 if [ -z $SSH_AGENT_PID ]; then
