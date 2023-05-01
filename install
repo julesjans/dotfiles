@@ -19,4 +19,3 @@ ln -sfn $DOTFILES_DIR/nvim/ $HOME/.config/nvim
 ln -sfn $DOTFILES_DIR/.tmux.conf $HOME/.tmux.conf
 ln -sfn $DOTFILES_DIR/htop/ $HOME/.config/htop
 ln -sfn $DOTFILES_DIR/.gitconfig $HOME/.gitconfig
-git config --global include.path $HOME/.gitconfig
