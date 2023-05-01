@@ -1,5 +1,7 @@
 # Load .bashrc if it is there
-if [ -f ~/.bashrc ]; then . ~/.bashrc; fi
+if [ -z "${CODESPACES}" ]; then
+    if [ -f ~/.bashrc ]; then . ~/.bashrc; fi
+fi
 
 # Add sbin to PATH
 export PATH="/usr/local/sbin:$PATH"
