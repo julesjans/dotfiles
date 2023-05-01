@@ -19,7 +19,7 @@ SSH_AGENT_PIDS=`/bin/ps -ef | $GREP ssh-agent | $GREP -v grep | /usr/bin/awk '{p
 if [ -z "${SSH_AGENT_PIDS}" ]; then
     eval `ssh-agent -s` > /dev/null
     ssh-add 2>/dev/null
-    if [ -v "${SSH_PRIVATE_KEY}" ]; then
+    if [ -v SSH_PRIVATE_KEY ]; then
         ssh-add - <<< "${SSH_PRIVATE_KEY}"
     fi
 fi
