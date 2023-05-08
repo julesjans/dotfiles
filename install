@@ -13,10 +13,14 @@ fi
 ln -sfn $DOTFILES_DIR/.bash_logout $HOME/.bash_logout
 ln -sfn $DOTFILES_DIR/.bash_aliases $HOME/.bash_aliases
 ln -sfn $DOTFILES_DIR/.bash_functions $HOME/.bash_functions
+ln -sfn $DOTFILES_DIR/.tmux.conf $HOME/.tmux.conf
+ln -sfn $DOTFILES_DIR/.gitconfig $HOME/.gitconfig
 ln -sfn $DOTFILES_DIR/vim/gvimrc $HOME/.gvimrc
 ln -sfn $DOTFILES_DIR/vim/vimrc $HOME/.vimrc
 ln -sfn $DOTFILES_DIR/vim/ $HOME/.vim
+
+mkdir -p $HOME/.config/nvim
 ln -sfn $DOTFILES_DIR/nvim/ $HOME/.config/nvim
-ln -sfn $DOTFILES_DIR/.tmux.conf $HOME/.tmux.conf
+
+mkdir -p $HOME/.config/htop
 ln -sfn $DOTFILES_DIR/htop/ $HOME/.config/htop
-ln -sfn $DOTFILES_DIR/.gitconfig $HOME/.gitconfig
