@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if $CODESPACES;
+if [ "$CODESPACES" = true ] ;
 then
   DOTFILES_DIR=/workspaces/.codespaces/.persistedshare/dotfiles
   cat $DOTFILES_DIR/.bash_profile >> $HOME/.bashrc
